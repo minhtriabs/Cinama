@@ -1,0 +1,64 @@
+.m-top-bottom{
+    margin: 70px 0px;
+}
+@media (min-width: 1113px) {
+    .col-md-o-3{
+        margin-left: 25%;
+    }
+}
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .col-md-o-3{
+        margin-left: 25%;
+    }
+}
+input[id="username"], input[id="password"] {
+    outline: none;
+    border: 1px solid;
+    border-color: #333;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 10px 0px 10px;
+}
+
+.heading {
+    text-align: center;
+}
+
+input[id="username"]:hover, input[id="password"]:hover {
+    border-color: #007bff;
+}
+
+.form__y {
+    position: absolute;
+    border: 1.5px solid #333;
+    border-radius: 5px;
+    padding: 30px 15px 15px 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fafacf;
+}
+
+.spacer {
+    margin-bottom: 30px;
+}
+
+.invalid span {
+    font-size: 1rem !important;
+    color: red;
+}
+
+.invalid input {
+    border-color: red;
+}
+
+.b-full {
+    background-image: url('/assets/images/login.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.img-movie{
+    width:100px;
+    height:100px;
+}

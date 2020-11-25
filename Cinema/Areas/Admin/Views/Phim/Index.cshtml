@@ -1,0 +1,96 @@
+﻿@model IEnumerable<Cinema.Areas.Admin.Models.PhimModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AnhPhim)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenPhim)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenDienVien)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenNgonNgu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TheLoai)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenPhuDe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DaoDien)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KhoiChieu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ThoiLuong)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rated)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TrangThai)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <img src="~/assets/images/@Html.DisplayFor(modelItem => item.AnhPhim)" class="img-movie" alt="Responsive image">
+                
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenPhim)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenDienVien)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenNgonNgu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TheLoai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenPhuDe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DaoDien)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhoiChieu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThoiLuong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rated)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrangThai)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IDPhim">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IDPhim">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IDPhim">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

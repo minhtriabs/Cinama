@@ -1,0 +1,93 @@
+﻿@model Cinema.Areas.Admin.Models.PhimModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>PhimModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AnhPhim)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AnhPhim)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TenPhim)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenPhim)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TenDienVien)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenDienVien)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TenNgonNgu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenNgonNgu)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TheLoai)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TheLoai)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TenPhuDe)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenPhuDe)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DaoDien)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DaoDien)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KhoiChieu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KhoiChieu)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ThoiLuong)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ThoiLuong)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Rated)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Rated)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TrangThai)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TrangThai)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.idphong)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.idphong.IDPhong)
+        </dd class>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IDPhim" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

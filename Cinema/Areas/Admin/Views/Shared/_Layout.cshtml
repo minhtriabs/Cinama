@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <partial name="_HeadPartial.cshtml" />
+</head>
+<body>
+
+    <partial name="_HeaderPartial.cshtml" />
+    @RenderBody()
+    <partial name="_FooterPartial.cshtml" />
+    <partial name="_PartialScript.cshtml" />
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

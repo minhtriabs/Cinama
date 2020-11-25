@@ -1,0 +1,40 @@
+﻿
+<script src="~/assets/js/jquery-2.0.3.min.js"></script>
+<script src="~/assets/js/jquery.mobile.custom.min.js"></script>
+<script src="~/assets/js/bootstrap.min.js"></script>
+<script src="~/assets/js/typeahead-bs2.min.js"></script>
+
+<!-- Hình -->
+<script src="~/assets/js/flot/jquery.flot.min.js"></script>
+<script src="~/assets/js/flot/jquery.flot.pie.min.js"></script>
+<!-- kết thúc -->
+<!-- danh mục trái-->
+<script src="~/assets/js/ace-elements.min.js"></script>
+<script src="~/assets/js/ace.min.js"></script>
+<!-- kết thúcs-->
+<!-- page specific plugin scripts -->
+
+<script src="~/assets/js/date-time/bootstrap-datepicker.min.js"></script>
+<script src="~/assets/js/jqGrid/jquery.jqGrid.min.js"></script>
+<script src="~/assets/js/jqGrid/i18n/grid.locale-en.js"></script>
+<!-- ket thuc -->
+<!-- inline scripts related to this page -->
+<script src="~/lib/js/thongke.js"></script>
+<script src="~/lib/js/bieudo.js"></script>
+<script src="js/login.js"></script>
+<script>
+    var btnLogin = document.querySelector('button[btn-id="submit"]');
+    if (btnLogin) {
+        Validator({
+            form: '#form-1',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isUsername('#username'),
+                Validator.isPassword('#password', 6)
+            ],
+            onSubmit: function (data) {
+                console.log(data);
+            }
+        });
+    }
+</script>

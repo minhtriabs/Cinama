@@ -1,0 +1,196 @@
+﻿@{ 
+    Layout = "_Layout";
+}
+<input page-index="admin-index" type="text" value="" hidden/>
+            <div class="breadcrumbs" id="breadcrumbs">
+                <script type="text/javascript">
+							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+                </script>
+
+                <ul class="breadcrumb">
+                    <li>
+                        <i class="icon-home home-icon"></i>
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="active">Trang chủ</li>
+                </ul><!-- .breadcrumb -->
+
+                <div class="nav-search" id="nav-search">
+                    <form class="form-search">
+                        <span class="input-icon">
+                            <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+                            <i class="icon-search nav-search-icon"></i>
+                        </span>
+                    </form>
+                </div><!-- #nav-search -->
+            </div>
+
+            <div class="page-content">
+                <div class="page-header">
+                    <h1>
+                        Trang Chủ
+                        <small>
+                            <i class="icon-double-angle-right"></i>
+                            trang chủ
+                        </small>
+                    </h1>
+                </div><!-- /.page-header -->
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+
+                        <div class="alert alert-block alert-success">
+                            <button type="button" class="close" data-dismiss="alert">
+                                <i class="icon-remove"></i>
+                            </button>
+
+                            <i class="icon-ok green"></i>
+                            <span>Welcome to</span>
+                            <strong class="green">
+                                <span>Nguyễn Trọng</span>
+                            </strong>
+                            <span>, Chào mừng bạn đến với quản trị hệ thống.</span>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="space-6"></div>
+                            <div class="vspace-sm"></div>
+
+
+                            <div class="col-sm-6 col-md-o-3">
+                                <div class="widget-box">
+                                    <div class="widget-header widget-header-flat widget-header-small">
+                                        <h5>
+                                            <i class="icon-signal"></i>
+                                            Traffic Sources
+                                        </h5>
+
+                                        <div class="widget-toolbar no-border">
+                                            <button id="statistic" class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown">
+                                                Trong ngày
+                                                <i class="icon-angle-down icon-on-right bigger-110"></i>
+                                            </button>
+
+                                            <ul id="statistical" class="dropdown-menu pull-right dropdown-125 dropdown-lighter dropdown-caret">
+                                                <li class="active">
+                                                    <a class="blue">
+                                                        <i class="icon-caret-right bigger-110">&nbsp;</i>
+                                                        Trong ngày
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="icon-caret-right bigger-110 invisible">&nbsp;</i>
+                                                        Trong tuần
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a>
+                                                        <i class="icon-caret-right bigger-110 invisible">&nbsp;</i>
+                                                        Trong tháng
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="widget-body">
+                                        <div class="widget-main">
+                                            <div id="piechart-placeholder" class="m-top-bottom"></div>
+
+                                            <div class="hr hr8 hr-double"></div>
+
+                                            <div class="clearfix">
+
+                                                <div class="grid3">
+                                                    <span class="grey">
+                                                        <!-- <i class="icon-twitter-sign icon-2x purple"></i> -->
+                                                        <svg style="height: 26px; width:auto; color:#AF4E96;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chair" class="svg-inline--fa fa-chair fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M112 128c0-29.5 16.2-55 40-68.9V256h48V48h48v208h48V59.1c23.8 13.9 40 39.4 40 68.9v128h48V128C384 57.3 326.7 0 256 0h-64C121.3 0 64 57.3 64 128v128h48zm334.3 213.9l-10.7-32c-4.4-13.1-16.6-21.9-30.4-21.9H42.7c-13.8 0-26 8.8-30.4 21.9l-10.7 32C-5.2 362.6 10.2 384 32 384v112c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V384h256v112c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V384c21.8 0 37.2-21.4 30.3-42.1z"></path></svg>
+
+                                                        <span>&nbsp; Ghế thường</span>
+                                                    </span>
+                                                    <h4 id="totalChair" class="bigger pull-right">1,000,000</h4>
+                                                </div>
+
+                                                <div class="grid3">
+                                                    <span class="grey">
+                                                        <svg style="height: 26px; width:auto; color:#DA5430;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="couch" class="svg-inline--fa fa-couch fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M160 224v64h320v-64c0-35.3 28.7-64 64-64h32c0-53-43-96-96-96H160c-53 0-96 43-96 96h32c35.3 0 64 28.7 64 64zm416-32h-32c-17.7 0-32 14.3-32 32v96H128v-96c0-17.7-14.3-32-32-32H64c-35.3 0-64 28.7-64 64 0 23.6 13 44 32 55.1V432c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16v-16h384v16c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16V311.1c19-11.1 32-31.5 32-55.1 0-35.3-28.7-64-64-64z"></path></svg>
+                                                        <span>&nbsp; Ghế víp</span>
+                                                    </span>
+                                                    <h4 id="totalChairVip" class="bigger pull-right">1,000,000</h4>
+                                                </div>
+                                            </div>
+                                            <div class="hr hr8 hr-double"></div>
+
+                                            <div class="clearfix">
+                                                <div class="grid3" style="width:100%;">
+                                                    <span class="grey">
+                                                        <svg style="height: 26px; width:auto; color:#DA5430;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="money-check-alt" class="svg-inline--fa fa-money-check-alt fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M608 32H32C14.33 32 0 46.33 0 64v384c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V64c0-17.67-14.33-32-32-32zM176 327.88V344c0 4.42-3.58 8-8 8h-16c-4.42 0-8-3.58-8-8v-16.29c-11.29-.58-22.27-4.52-31.37-11.35-3.9-2.93-4.1-8.77-.57-12.14l11.75-11.21c2.77-2.64 6.89-2.76 10.13-.73 3.87 2.42 8.26 3.72 12.82 3.72h28.11c6.5 0 11.8-5.92 11.8-13.19 0-5.95-3.61-11.19-8.77-12.73l-45-13.5c-18.59-5.58-31.58-23.42-31.58-43.39 0-24.52 19.05-44.44 42.67-45.07V152c0-4.42 3.58-8 8-8h16c4.42 0 8 3.58 8 8v16.29c11.29.58 22.27 4.51 31.37 11.35 3.9 2.93 4.1 8.77.57 12.14l-11.75 11.21c-2.77 2.64-6.89 2.76-10.13.73-3.87-2.43-8.26-3.72-12.82-3.72h-28.11c-6.5 0-11.8 5.92-11.8 13.19 0 5.95 3.61 11.19 8.77 12.73l45 13.5c18.59 5.58 31.58 23.42 31.58 43.39 0 24.53-19.05 44.44-42.67 45.07zM416 312c0 4.42-3.58 8-8 8H296c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h112c4.42 0 8 3.58 8 8v16zm160 0c0 4.42-3.58 8-8 8h-80c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16zm0-96c0 4.42-3.58 8-8 8H296c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h272c4.42 0 8 3.58 8 8v16z"></path></svg>
+                                                        <span style="font-size: 2rem; font-weight: bold;">&nbsp; Tổng tiền</span>
+                                                    </span>
+                                                    <h4 id="total" class="bigger pull-right">1,000,000</h4>
+                                                </div>
+                                            </div>
+                                        </div><!-- /widget-main -->
+                                    </div><!-- /widget-body -->
+                                </div><!-- /widget-box -->
+                            </div><!-- /span -->
+
+
+                        </div><!-- /row -->
+
+                        <div class="hr hr32 hr-dotted"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ace-settings-container" id="ace-settings-container">
+                <div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
+                    <i class="icon-cog bigger-150"></i>
+                </div>
+
+                <div class="ace-settings-box" id="ace-settings-box">
+                    <div>
+                        <div class="pull-left">
+                            <select id="skin-colorpicker" class="hide">
+                                <option data-skin="default" value="#438EB9">#438EB9</option>
+                                <option data-skin="skin-1" value="#222A2D">#222A2D</option>
+                                <option data-skin="skin-2" value="#C6487E">#C6487E</option>
+                                <option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
+                            </select>
+                        </div>
+                        <span>&nbsp; Choose Skin</span>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-navbar" />
+                        <label class="lbl" for="ace-settings-navbar"> Fixed Navbar</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-sidebar" />
+                        <label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-breadcrumbs" />
+                        <label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" />
+                        <label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-add-container" />
+                        <label class="lbl" for="ace-settings-add-container">
+                            Inside
+                            <b>.container</b>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
